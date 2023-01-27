@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+.container { /* 그리드시스템 */
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; /* 그리드시스템 좌측 우측의 마진 */
+}
+
+.wrapper {
+    width: 100%;
+}
+
+/* ========= header ========= */
+header {
+    position: relative;
+    width: 100%;
+    height: 105px;
+} 
+
+/* leftmenu-logo-rightmenu */
+.menu-logo-flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left-menu */
+.left-menu li {
+    float: left;
+}
+
+.left-menu img {
+    width: 23px;
+    height: 23px;
+    margin-top: 38px;
+    margin-left: 40px;
+}
+
+/* logo */
+.logo img {
+    width: 187px;
+    height: 77px;
+    margin-top: 15px;
+}
+
+/* right-menu */
+.right-menu li {
+    float: left;
+    margin-top: 38px;
+    margin-right: 10px;
+}
+
+.right-menu img {
+    width: 22px;
+    height: 22px;
+}
+
+.right-menu li:last-child img {
+    margin-right: 30px;
+}
+
+/* ========= main ========= */
+/* main-img */
+video {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* bestsellers */
+.bestsellers h3 {
+    margin-top: 165px;
+    margin-bottom: 130px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list img {
+    width: 278px;
+    height: 278px;
+}
+
+.list-text p {
+    font-size: 20px;
+    font-family: LG Smart UI;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.list-text a:hover {
+    font-weight: bold;
+}
+
+/* category */
+.category {
+    margin-top: 165px;
+    margin-bottom: 165px;
+}
+
+.product > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 590px;
+    background-color: #f2f3f5;
+}
+
+.pro-text {
+    width: 50%;
+    text-align: center;
+}
+
+.pro-text p {
+    color: #808080;
+    font-size: 30px;
+    font-family: LG Smart UI;
+}
+
+.product img {
+    width: 100%;
+    height: 590px;
+}
+
+.product a:hover {
+    text-decoration: underline 2px #808080;
+}
+
+.pro-text .orange {
+    color: #ee880a;
+    font-size: 70px;
+    font-family: CentSchbook BT;    
+}
+
+.pro-text .blue {
+    color: #0d76e2;
+    font-size: 70px;
+    font-family: CentSchbook BT;
+}
+
+.pro-text .brown {
+    color: #6f3504;
+    font-size: 70px;
+    font-family: CentSchbook BT;
+}
+
+
+/* body-hair */
+.product2 {
+    display: flex;
+    margin-bottom: 165px;
+}
+
+.body-care,
+.hair-care { 
+    position: relative; 
+    width: 50%;
+
+    transition: opacity 0.2s; 
+}
+
+.body-care:hover .bodycare-img,
+.hair-care:hover .haircare-img {
+    background-color: white;
+}
+
+.bodycare-img,
+.haircare-img {
+    opacity: 1;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.body-care:hover img,
+.hair-care:hover img {
+    opacity: 0.15;
+
+    transition: all 0.3s ease;
+}
+
+.body-care a > p,
+.hair-care a > p {
+    color: #808080;
+    font-size: 30px;
+    font-family: LG Smart UI;
+    bottom: 150px;
+    position: absolute;
+    text-align: right;
+    width: 89%;
+    opacity: 0;
+
+    transition: all 0.3s ease;
+}
+
+.body-care:hover a > p,
+.hair-care:hover a > p {
+    opacity: 1; 
+    
+    transition: all 0.3s ease; 
+}
+
+.body-care:hover a:hover p,
+.hair-care:hover a:hover p {
+    text-decoration: underline 2px #808080;
+
+    transition: all 0.3s ease;
+}
+
+/* recommend */
+.recommend h3 {
+    margin-bottom: 130px;
+}
+
+.recommend .list .pre,
+.recommend .list .aft {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: LG Smart UI;
+    margin-top: 110px;
+}
+
+/* consult */
+.consult {
+    margin-top: 165px;
+    margin-bottom: 165px;
+}
+
+.consult-area {
+    display: flex;
+}
+
+.consult-area > div {
+    display: flex;
+    align-items: center;
+    background-color: #f2f3f5;
+}
+
+.consult-text { 
+    width: 100%;
+    font-family: LG Smart UI;
+    line-height: 35px;
+    text-align: center;
+    justify-content: center;
+}
+
+.consult-text p {
+    font-size: 20px;
+}
+
+.consult-text strong {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.consult-text a:hover {
+    text-decoration: underline 2px black;
+}
+
+/* banner */
+.banner {
+    margin-bottom: 165px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* ========= footer ========= */
+/* index */
+.index {
+    margin-bottom: 165px;
+}
+
+.index-list {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    text-align: center;
+    font-family: LG Smart UI;
+}
+
+.index-list ul:first-child {
+    margin-left: 100px;
+}
+
+.index-list ul:last-child {
+    margin-right: 100px;
+}
+
+/* copyright-sns-security */
+.copyright-sns-security {
+    margin-bottom: 30px;
+}
+
+/* copyright-sns-security-text */
+.copyright-sns-security-text {
+    display: flex;
+    justify-content: space-between;
+    line-height: 18px;
+    font-size: 14px;
+    font-family: LG Smart UI; 
+}
+
+.copyright-sns-security-text ul:last-child {
+    text-align: right;
+}
+
+/* sns */
+.sns {
+    display: flex;
+    margin-right: 70px;
+}
+
+.sns img {
+    margin-top: 30px;    
+    padding: 5px;
+}
+
+
+
+
+
+
+

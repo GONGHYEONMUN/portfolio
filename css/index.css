@@ -1,0 +1,1047 @@
+html {
+  overflow: overlay;
+}
+html::-webkit-scrollbar {
+  width: 6px;
+}
+html::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #f8c7d5 0%, #9995ef 100%);
+  border-radius: 5px;
+}
+html::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 200;
+  font-size: 1.125em;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: pink;
+  color: white;
+}
+
+.container {
+  width: 89.7435897436%;
+  position: relative;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 7.5em;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 5em;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+h4 {
+  font-weight: 200;
+}
+
+h5 {
+  font-weight: 200;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+header .header_logo {
+  position: relative;
+}
+header .header_logo img {
+  position: absolute;
+  width: 23px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 1400px) {
+  header .header_logo img {
+    width: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}
+header section div.main0 {
+  height: 100vh;
+}
+header section div.main0 .bg_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+header section div.main0 .bg_img__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+header section div.main0 .bg_img img {
+  width: 100vw;
+  height: 100vh;
+}
+header section div.main0 .main0_contents {
+  animation: flicker 2.8s infinite alternate;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #9b19ce, 0 0 80px #9b19ce, 0 0 90px #9b19ce, 0 0 100px #9b19ce, 0 0 150px #9b19ce;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header section div.main0 .main0_contents {
+    top: 45%;
+  }
+}
+header section div.main0 .main0_contents h2 {
+  text-transform: uppercase;
+  font-size: calc(1.5em + 3vw);
+  font-family: "LEMON MILK Light";
+  color: white;
+  margin-bottom: calc(0.3em + 0.5vw);
+}
+@media screen and (min-width: 1400px) {
+  header section div.main0 .main0_contents h2 {
+    letter-spacing: 2px;
+    font-size: 4em;
+    margin-bottom: 40px;
+  }
+}
+header section div.main0 .main0_contents img {
+  width: 70%;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1400px) {
+  header section div.main0 .main0_contents img {
+    width: 20%;
+    margin-top: 0;
+  }
+}
+header section div.main0 .mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+}
+@keyframes move {
+  from {
+    bottom: 30px;
+  }
+  75% {
+    bottom: 60px;
+  }
+  to {
+    bottom: 60px;
+  }
+}
+@keyframes move_pc {
+  from {
+    bottom: 60px;
+  }
+  75% {
+    bottom: 30px;
+  }
+  to {
+    bottom: 30px;
+  }
+}
+header section div.main0 .mouse img {
+  position: absolute;
+  animation: move 1s infinite alternate;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1400px) {
+  header section div.main0 .mouse img {
+    width: 70%;
+  }
+}
+header section div.main0 .mouse p {
+  transform: translateX(-50%);
+  font-family: "LEMON MILK Light";
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+}
+
+main .background {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  main .background {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-4.4%);
+  }
+}
+main .background .bluewave-pc {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+main .about h2 {
+  font-family: "LEMON MILK Light";
+  font-size: calc(1.5em + 3vw);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 1400px) {
+  main .about .id-flexbox {
+    display: flex;
+    width: 60%;
+    margin: auto;
+  }
+}
+main .about .id-pic {
+  display: block;
+  width: 100%;
+  border: 2px black solid;
+  border-bottom: 0;
+}
+@media screen and (min-width: 1400px) {
+  main .about .id-pic {
+    width: 50%;
+    border-bottom: 2px black solid;
+    border-right: 0;
+  }
+}
+main .about .id-pic img {
+  width: 100%;
+}
+@media screen and (min-width: 1400px) {
+  main .about .id-pic img {
+    width: 50%;
+  }
+}
+main .about .profile {
+  border: 2px black solid;
+  width: 100%;
+  padding: 10px;
+}
+@media screen and (min-width: 1400px) {
+  main .about .profile {
+    width: 50%;
+  }
+}
+main .about .profile h3 {
+  font-family: "LEMON MILK Light";
+  font-size: calc(1em + 2vw);
+  font-weight: 550;
+}
+main .about .profile-flexbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1400px) {
+  main .about .profile-flexbox {
+    margin-top: 50px;
+    line-height: 50px;
+  }
+}
+main .about .profile-flexbox ul {
+  font-size: calc(0.7em + 0.5vw);
+}
+main .about .profile-flexbox ul:first-child li {
+  font-family: "SCoreDream";
+  font-weight: 600;
+}
+main .about .profile-flexbox ul:last-child li {
+  font-family: "SCoreDream";
+}
+main .about .edu-flexbox {
+  margin-top: 10px;
+}
+@media screen and (min-width: 1400px) {
+  main .about .edu-flexbox {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+main .about .mobile-edu-cd {
+  width: 100%;
+}
+@media screen and (min-width: 1400px) {
+  main .about .mobile-edu-cd {
+    display: none;
+  }
+}
+main .about .edu-cd {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  main .about .edu-cd {
+    display: block;
+    width: 50%;
+    height: 416px;
+    background-image: url("../img/about-cd11111.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+}
+main .about .edu-cd p {
+  font-family: "SCoreDream";
+  letter-spacing: 2px;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+main .about .edu-cd p {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+main .about .edu-cd:hover p {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+main .about .edu-cd:hover p:hover {
+  transition: all 0.3s ease;
+}
+main .about .education {
+  display: block;
+  border: 2px black solid;
+  padding: 10px;
+}
+@media screen and (min-width: 1400px) {
+  main .about .education {
+    width: 50%;
+    height: 416px;
+  }
+}
+main .about .education h3 {
+  font-family: "LEMON MILK Light";
+  font-size: calc(1em + 2vw);
+  font-weight: 550;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1400px) {
+  main .about .education h3 {
+    margin-bottom: 50px;
+  }
+}
+main .about .education .edu-text {
+  font-size: calc(0.7em + 0.5vw);
+}
+main .about .education p {
+  font-family: "SCoreDream";
+}
+@media screen and (min-width: 1400px) {
+  main .about .education p {
+    line-height: 30px;
+  }
+}
+main .about .education .date {
+  font-weight: 600;
+}
+main .skill .skill-cd {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  main .skill .skill-cd {
+    display: block;
+    position: absolute;
+    top: 2000px;
+    left: 50px;
+  }
+}
+main .skill .skill-cd img {
+  width: 80%;
+}
+main .skill h2 {
+  font-family: "LEMON MILK Light";
+  font-size: calc(1.5em + 3vw);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+main .skill p {
+  font-family: "SCoreDream";
+  font-size: calc(1em + 1vw);
+  text-align: center;
+}
+main .skill .ps-ai-flexbox,
+main .skill .html-css-flexbox,
+main .skill .java-sass-flexbox,
+main .skill .jquery-git-flexbox {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+@media screen and (min-width: 1400px) {
+  main .skill .ps-ai-flexbox,
+main .skill .html-css-flexbox,
+main .skill .java-sass-flexbox,
+main .skill .jquery-git-flexbox {
+    justify-content: right;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .skill .ps-ai-flexbox img,
+main .skill .java-sass-flexbox img {
+    padding: 50px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .skill .html-css-flexbox,
+main .skill .jquery-git-flexbox {
+    display: none;
+  }
+}
+main .skill .pc-version {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  main .skill .pc-version {
+    display: block;
+  }
+}
+main .skill .ps,
+main .skill .ai,
+main .skill .html,
+main .skill .css,
+main .skill .java,
+main .skill .sass,
+main .skill .jquery,
+main .skill .git {
+  position: relative;
+  transition: opacity 0.2s;
+}
+main .skill .ps:hover .ps-cd,
+main .skill .ai:hover .ai-cd,
+main .skill .html:hover .html-cd,
+main .skill .css:hover .css-cd,
+main .skill .java:hover .java-cd,
+main .skill .sass:hover .sass-cd,
+main .skill .jquery:hover .jquery-cd,
+main .skill .git:hover .git-cd {
+  background-color: white;
+}
+main .skill .ps-cd,
+main .skill .ai-cd,
+main .skill .html-cd,
+main .skill .css-cd,
+main .skill .java-cd,
+main .skill .sass-cd,
+main .skill .jquery-cd,
+main .skill .git-cd {
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+main .skill .ps-cd img,
+main .skill .ai-cd img,
+main .skill .html-cd img,
+main .skill .css-cd img,
+main .skill .java-cd img,
+main .skill .sass-cd img,
+main .skill .jquery-cd img,
+main .skill .git-cd img {
+  width: 100%;
+}
+main .skill .ps:hover img,
+main .skill .ai:hover img,
+main .skill .html:hover img,
+main .skill .css:hover img,
+main .skill .java:hover img,
+main .skill .sass:hover img,
+main .skill .jquery:hover img,
+main .skill .git:hover img {
+  opacity: 0.15;
+  transition: all 0.3s ease;
+}
+main .skill .ps > span,
+main .skill .ai > span,
+main .skill .html > span,
+main .skill .css > span,
+main .skill .java > span,
+main .skill .sass > span,
+main .skill .jquery > span,
+main .skill .git > span {
+  color: #2c3691;
+  font-size: 55px;
+  font-family: "SCoreDream";
+  font-weight: 500;
+  position: absolute;
+  transform: translate(-45%, -120%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+@media screen and (min-width: 1400px) {
+  main .skill .ps > span,
+main .skill .ai > span,
+main .skill .html > span,
+main .skill .css > span,
+main .skill .java > span,
+main .skill .sass > span,
+main .skill .jquery > span,
+main .skill .git > span {
+    transform: translate(-45%, -150%);
+    font-size: 60px;
+  }
+}
+main .skill .ps > span > div,
+main .skill .ai > span > div,
+main .skill .html > span > div,
+main .skill .css > span > div,
+main .skill .java > span > div,
+main .skill .sass > span > div,
+main .skill .jquery > span > div,
+main .skill .git > span > div {
+  font-size: 12px;
+}
+@media screen and (min-width: 1400px) {
+  main .skill .ps > span > div,
+main .skill .ai > span > div,
+main .skill .html > span > div,
+main .skill .css > span > div,
+main .skill .java > span > div,
+main .skill .sass > span > div,
+main .skill .jquery > span > div,
+main .skill .git > span > div {
+    font-size: 15px;
+  }
+}
+main .skill .ai > span {
+  color: #f89b1f;
+}
+main .skill .html > span {
+  color: #f16724;
+}
+main .skill .css > span {
+  color: #42afe3;
+}
+main .skill .java > span {
+  color: #fcd209;
+}
+main .skill .sass > span {
+  color: #ed168f;
+}
+main .skill .jquery > span {
+  color: #9bb5de;
+}
+main .skill .git > span {
+  color: black;
+}
+main .skill .ps:hover span,
+main .skill .ai:hover span,
+main .skill .html:hover span,
+main .skill .css:hover span,
+main .skill .java:hover span,
+main .skill .sass:hover span,
+main .skill .jquery:hover span,
+main .skill .git:hover span {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+main .skill .ps:hover span:hover,
+main .skill .ai:hover span:hover,
+main .skill .html:hover span:hover,
+main .skill .css:hover span:hover,
+main .skill .java:hover span:hover,
+main .skill .sass:hover span:hover,
+main .skill .jquery:hover span:hover,
+main .skill .git:hover span:hover {
+  transition: all 0.3s ease;
+}
+main .web .web-background {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  main .web .web-background {
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-35%);
+    z-index: -1;
+  }
+}
+main .web h2 {
+  font-family: "LEMON MILK Light";
+  font-size: calc(1.5em + 3vw);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+main .web .track01 {
+  background: linear-gradient(to top left, #fdedf3, #fcf9e3);
+}
+main .web .track02 {
+  background: linear-gradient(to top left, #fdedf3, #dbe4f4);
+}
+main .web .track03 {
+  background: linear-gradient(to top left, #e8f4ed, #fdedf3);
+}
+main .web .track01,
+main .web .track02,
+main .web .track03 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .web .track01 .track p,
+main .web .track02 .track p,
+main .web .track03 .track p {
+  text-align: center;
+  font-weight: 550;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1400px) {
+  main .web .track01 .track p,
+main .web .track02 .track p,
+main .web .track03 .track p {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .web .track01 .track-pc-flexbox,
+main .web .track02 .track-pc-flexbox,
+main .web .track03 .track-pc-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+main .web .track01 .pc img,
+main .web .track02 .pc img,
+main .web .track03 .pc img {
+  width: 100%;
+}
+@media screen and (min-width: 1400px) {
+  main .web .track01 .pc img,
+main .web .track02 .pc img,
+main .web .track03 .pc img {
+    width: 100%;
+  }
+}
+main .web .track01 .kiehl-text p,
+main .web .track01 .fairmont-text p,
+main .web .track01 .portfolio-text p,
+main .web .track02 .kiehl-text p,
+main .web .track02 .fairmont-text p,
+main .web .track02 .portfolio-text p,
+main .web .track03 .kiehl-text p,
+main .web .track03 .fairmont-text p,
+main .web .track03 .portfolio-text p {
+  color: #fec22f;
+  font-family: "SCoreDream";
+  font-size: calc(1em + 2vw);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1400px) {
+  main .web .track01 .kiehl-text p,
+main .web .track01 .fairmont-text p,
+main .web .track01 .portfolio-text p,
+main .web .track02 .kiehl-text p,
+main .web .track02 .fairmont-text p,
+main .web .track02 .portfolio-text p,
+main .web .track03 .kiehl-text p,
+main .web .track03 .fairmont-text p,
+main .web .track03 .portfolio-text p {
+    margin-top: 0;
+  }
+}
+main .web .track01 .fairmont-text p,
+main .web .track02 .fairmont-text p,
+main .web .track03 .fairmont-text p {
+  color: #3c92ad;
+}
+main .web .track01 .portfolio-text p,
+main .web .track02 .portfolio-text p,
+main .web .track03 .portfolio-text p {
+  color: #ff95bd;
+}
+main .web .track01 .text-flexbox,
+main .web .track02 .text-flexbox,
+main .web .track03 .text-flexbox {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20px;
+  line-height: 30px;
+  font-size: calc(0.7em + 0.5vw);
+}
+@media screen and (min-width: 1400px) {
+  main .web .track01 .text-flexbox,
+main .web .track02 .text-flexbox,
+main .web .track03 .text-flexbox {
+    line-height: 40px;
+  }
+}
+main .web .track01 .kiehl-playbar,
+main .web .track02 .kiehl-playbar,
+main .web .track03 .kiehl-playbar {
+  width: 100%;
+}
+@media screen and (min-width: 1400px) {
+  main .web .track01 .kiehl-playbar,
+main .web .track02 .kiehl-playbar,
+main .web .track03 .kiehl-playbar {
+    width: 100%;
+  }
+}
+main .web .track01 .play-flexbox,
+main .web .track02 .play-flexbox,
+main .web .track03 .play-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+main .design-pc-background {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  main .design-pc-background {
+    display: flex;
+    position: absolute;
+    width: 100%;
+  }
+}
+main .design-pc-background .design-bluewave-pc {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+main .design .container h2 {
+  font-family: "LEMON MILK Light";
+  font-size: calc(1.5em + 3vw);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+main .design .container img {
+  width: 80%;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #f8c7d5 0%, #9995ef 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+main .design .container p {
+  font-family: "SCoreDream";
+  font-size: calc(1em + 1vw);
+  text-align: center;
+}
+@media screen and (min-width: 1400px) {
+  main .design .container .pc-design1,
+main .design .container .pc-design2,
+main .design .container .pc-design3,
+main .design .container .pc-design4 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .design .container .pc-design1 {
+    position: relative;
+    right: 15%;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .design .container .pc-design2 {
+    position: relative;
+    margin-left: 280px;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .design .container .pc-design3 {
+    position: relative;
+    right: 15%;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .design .container .pc-design4 {
+    margin-left: 380px;
+  }
+}
+main .design .container .logo-design,
+main .design .container .banner-design,
+main .design .container .detail-design,
+main .design .container .package-design,
+main .design .container .mobile-design,
+main .design .container .infographics,
+main .design .container .info-design {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1400px) {
+  main .design .container .logo-design,
+main .design .container .banner-design,
+main .design .container .detail-design,
+main .design .container .package-design,
+main .design .container .mobile-design,
+main .design .container .infographics,
+main .design .container .info-design {
+    margin-bottom: 0;
+  }
+}
+main .design .container .logo-design img {
+  transition: all 0.2s linear;
+}
+main .design .container .logo-design:hover img {
+  transform: scale(0.8);
+}
+main .design .container .pc-banner-design img {
+  transition: all 0.2s linear;
+}
+main .design .container .pc-banner-design:hover img {
+  transform: scale(1.3);
+}
+main .design .container .banner-design img {
+  transition: all 0.2s linear;
+}
+main .design .container .banner-design:hover img {
+  transform: scale(0.8);
+}
+main .design .container .detail-design img {
+  transition: all 0.2s linear;
+}
+main .design .container .detail-design:hover img {
+  transform: scale(0.8);
+}
+main .design .container .pc-package-design img {
+  transition: all 0.2s linear;
+}
+main .design .container .pc-package-design:hover img {
+  transform: scale(0.8);
+}
+main .design .container .pc-banner-design p {
+  margin-top: 30px;
+}
+main .design .container .package-design img {
+  transition: all 0.2s linear;
+}
+main .design .container .package-design:hover img {
+  transform: scale(0.8);
+}
+main .design .container .mobile-design img {
+  transition: all 0.2s linear;
+}
+main .design .container .mobile-design:hover img {
+  transform: scale(0.8);
+}
+main .design .container .pc-mobile-design img {
+  transition: all 0.2s linear;
+}
+main .design .container .pc-mobile-design:hover img {
+  transform: scale(0.8);
+}
+main .design .container .infographics img {
+  transition: all 0.2s linear;
+}
+main .design .container .infographics:hover img {
+  transform: scale(0.8);
+}
+@media screen and (min-width: 1400px) {
+  main .design .container .banner-design,
+main .design .container .package-design,
+main .design .container .mobile-design,
+main .design .container .info-design {
+    display: none;
+  }
+}
+main .design .container .pc-banner-design,
+main .design .container .pc-package-design,
+main .design .container .pc-mobile-design,
+main .design .container .pc-info-design {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  main .design .container .pc-banner-design,
+main .design .container .pc-package-design,
+main .design .container .pc-mobile-design,
+main .design .container .pc-info-design {
+    display: block;
+  }
+}
+
+footer .thankyou-background {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  footer .thankyou-background {
+    display: block;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, 414px);
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer .footer-text {
+    position: relative;
+    transform: translateY(200px);
+  }
+}
+footer .footer-text h1 {
+  height: 100px;
+  text-align: center;
+}
+footer .footer-text h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce 0.3s ease infinite alternate;
+  font-family: "LEMON MILK Light";
+  font-size: 40px;
+  color: #8c76d3;
+  text-shadow: 0 1px 0 #5c4e8a, 0 2px 0 #5c4e8a, 0 3px 0 #5c4e8a, 0 4px 0 #5c4e8a, 0 5px 0 #5c4e8a, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 1400px) {
+  footer .footer-text h1 span {
+    font-size: 80px;
+  }
+}
+footer .footer-text h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+footer .footer-text h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+footer .footer-text h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+footer .footer-text h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+footer .footer-text h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+footer .footer-text h1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+footer .footer-text h1 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #5c4e8a, 0 2px 0 #5c4e8a, 0 3px 0 #5c4e8a, 0 4px 0 #5c4e8a, 0 5px 0 #5c4e8a, 0 6px 0 #5c4e8a, 0 7px 0 #5c4e8a, 0 8px 0 #5c4e8a, 0 9px 0 #5c4e8a, 0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+footer .footer-img {
+  transform: translateY(400px);
+}
+@media screen and (min-width: 1400px) {
+  footer .footer-img {
+    display: flex;
+    position: absolute;
+    right: 0;
+    transform: translate(0, -30%);
+  }
+}
+footer .footer-music1 {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+footer .footer-music1 {
+  animation: up-down 1s infinite ease-in-out alternate;
+}
+@keyframes up-down {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-20px);
+  }
+}
+footer .footer-music3 {
+  animation: up-down 0.7s infinite ease-in-out alternate;
+}
+@keyframes up-down {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-20px);
+  }
+}
+footer .footer-music3 {
+  margin-top: -200px;
+}
+@media screen and (min-width: 1400px) {
+  footer .footer-music3 {
+    margin-top: -100px;
+  }
+}
+footer .footer-music3 img {
+  transform: translate(150px, -30px);
+}
+footer .footer-logo {
+  text-align: center;
+}
+footer .footer-logo img {
+  width: 70%;
+}
+@media screen and (min-width: 1400px) {
+  footer .footer-logo img {
+    width: 100%;
+  }
+}

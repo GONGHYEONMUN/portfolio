@@ -1,0 +1,87 @@
+@import "./style.scss";
+@import "./mixin.scss";
+html {
+    overflow: overlay;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to bottom, #f8c7d5 0%,  #9995ef 100%);
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 8px;
+    }
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: {
+        weight: 200;
+        size: 1.125em;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    background-color: pink;
+    color: white;
+}
+
+.container {
+    width: 89.74358974358974%;
+
+    @include responsive(pc-screens) {
+        width: 100%;
+    }
+
+    position: relative;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    font: {
+        weight: 100;
+        size: 1em;
+    }
+}
+
+h1 {
+    font-size: 7.5em;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 5em;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+h4 {
+    font-weight: 200;
+}
+
+h5 {
+    font-weight: 200;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
