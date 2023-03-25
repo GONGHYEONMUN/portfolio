@@ -7,12 +7,6 @@
         }
     }
 
-    @else if $break == screen-800 {  // 이것은 br을 없애기 위해 사용된 값입니다. 사용 시 조장에 허락을 맡으시길 바랍니다.
-        @media screen and (min-width:$break-middle) {
-            @content;
-        }
-    }
-
     @else if $break == pc-screens { //중단점 1400px
         @media screen and (min-width:$break-pc) {
             @content;

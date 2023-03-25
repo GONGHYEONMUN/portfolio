@@ -422,21 +422,21 @@ main .skill .jquery-git-flexbox {
 }
 @media screen and (min-width: 1400px) {
   main .skill .ps-ai-flexbox,
-main .skill .html-css-flexbox,
-main .skill .java-sass-flexbox,
-main .skill .jquery-git-flexbox {
+  main .skill .html-css-flexbox,
+  main .skill .java-sass-flexbox,
+  main .skill .jquery-git-flexbox {
     justify-content: right;
   }
 }
 @media screen and (min-width: 1400px) {
   main .skill .ps-ai-flexbox img,
-main .skill .java-sass-flexbox img {
+  main .skill .java-sass-flexbox img {
     padding: 50px;
   }
 }
 @media screen and (min-width: 1400px) {
   main .skill .html-css-flexbox,
-main .skill .jquery-git-flexbox {
+  main .skill .jquery-git-flexbox {
     display: none;
   }
 }
@@ -521,13 +521,13 @@ main .skill .git > span {
 }
 @media screen and (min-width: 1400px) {
   main .skill .ps > span,
-main .skill .ai > span,
-main .skill .html > span,
-main .skill .css > span,
-main .skill .java > span,
-main .skill .sass > span,
-main .skill .jquery > span,
-main .skill .git > span {
+  main .skill .ai > span,
+  main .skill .html > span,
+  main .skill .css > span,
+  main .skill .java > span,
+  main .skill .sass > span,
+  main .skill .jquery > span,
+  main .skill .git > span {
     transform: translate(-45%, -150%);
     font-size: 60px;
   }
@@ -544,13 +544,13 @@ main .skill .git > span > div {
 }
 @media screen and (min-width: 1400px) {
   main .skill .ps > span > div,
-main .skill .ai > span > div,
-main .skill .html > span > div,
-main .skill .css > span > div,
-main .skill .java > span > div,
-main .skill .sass > span > div,
-main .skill .jquery > span > div,
-main .skill .git > span > div {
+  main .skill .ai > span > div,
+  main .skill .html > span > div,
+  main .skill .css > span > div,
+  main .skill .java > span > div,
+  main .skill .sass > span > div,
+  main .skill .jquery > span > div,
+  main .skill .git > span > div {
     font-size: 15px;
   }
 }
@@ -645,15 +645,15 @@ main .web .track03 .track p {
 }
 @media screen and (min-width: 1400px) {
   main .web .track01 .track p,
-main .web .track02 .track p,
-main .web .track03 .track p {
+  main .web .track02 .track p,
+  main .web .track03 .track p {
     margin-bottom: 100px;
   }
 }
 @media screen and (min-width: 1400px) {
   main .web .track01 .track-pc-flexbox,
-main .web .track02 .track-pc-flexbox,
-main .web .track03 .track-pc-flexbox {
+  main .web .track02 .track-pc-flexbox,
+  main .web .track03 .track-pc-flexbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -666,8 +666,8 @@ main .web .track03 .pc img {
 }
 @media screen and (min-width: 1400px) {
   main .web .track01 .pc img,
-main .web .track02 .pc img,
-main .web .track03 .pc img {
+  main .web .track02 .pc img,
+  main .web .track03 .pc img {
     width: 100%;
   }
 }
@@ -689,14 +689,14 @@ main .web .track03 .portfolio-text p {
 }
 @media screen and (min-width: 1400px) {
   main .web .track01 .kiehl-text p,
-main .web .track01 .fairmont-text p,
-main .web .track01 .portfolio-text p,
-main .web .track02 .kiehl-text p,
-main .web .track02 .fairmont-text p,
-main .web .track02 .portfolio-text p,
-main .web .track03 .kiehl-text p,
-main .web .track03 .fairmont-text p,
-main .web .track03 .portfolio-text p {
+  main .web .track01 .fairmont-text p,
+  main .web .track01 .portfolio-text p,
+  main .web .track02 .kiehl-text p,
+  main .web .track02 .fairmont-text p,
+  main .web .track02 .portfolio-text p,
+  main .web .track03 .kiehl-text p,
+  main .web .track03 .fairmont-text p,
+  main .web .track03 .portfolio-text p {
     margin-top: 0;
   }
 }
@@ -722,8 +722,8 @@ main .web .track03 .text-flexbox {
 }
 @media screen and (min-width: 1400px) {
   main .web .track01 .text-flexbox,
-main .web .track02 .text-flexbox,
-main .web .track03 .text-flexbox {
+  main .web .track02 .text-flexbox,
+  main .web .track03 .text-flexbox {
     line-height: 40px;
   }
 }
@@ -734,8 +734,8 @@ main .web .track03 .kiehl-playbar {
 }
 @media screen and (min-width: 1400px) {
   main .web .track01 .kiehl-playbar,
-main .web .track02 .kiehl-playbar,
-main .web .track03 .kiehl-playbar {
+  main .web .track02 .kiehl-playbar,
+  main .web .track03 .kiehl-playbar {
     width: 100%;
   }
 }
@@ -786,9 +786,9 @@ main .design .container p {
 }
 @media screen and (min-width: 1400px) {
   main .design .container .pc-design1,
-main .design .container .pc-design2,
-main .design .container .pc-design3,
-main .design .container .pc-design4 {
+  main .design .container .pc-design2,
+  main .design .container .pc-design3,
+  main .design .container .pc-design4 {
     display: flex;
     align-items: center;
     text-align: center;
@@ -834,12 +834,12 @@ main .design .container .info-design {
 }
 @media screen and (min-width: 1400px) {
   main .design .container .logo-design,
-main .design .container .banner-design,
-main .design .container .detail-design,
-main .design .container .package-design,
-main .design .container .mobile-design,
-main .design .container .infographics,
-main .design .container .info-design {
+  main .design .container .banner-design,
+  main .design .container .detail-design,
+  main .design .container .package-design,
+  main .design .container .mobile-design,
+  main .design .container .infographics,
+  main .design .container .info-design {
     margin-bottom: 0;
   }
 }
@@ -902,9 +902,9 @@ main .design .container .infographics:hover img {
 }
 @media screen and (min-width: 1400px) {
   main .design .container .banner-design,
-main .design .container .package-design,
-main .design .container .mobile-design,
-main .design .container .info-design {
+  main .design .container .package-design,
+  main .design .container .mobile-design,
+  main .design .container .info-design {
     display: none;
   }
 }
@@ -916,9 +916,9 @@ main .design .container .pc-info-design {
 }
 @media screen and (min-width: 1400px) {
   main .design .container .pc-banner-design,
-main .design .container .pc-package-design,
-main .design .container .pc-mobile-design,
-main .design .container .pc-info-design {
+  main .design .container .pc-package-design,
+  main .design .container .pc-mobile-design,
+  main .design .container .pc-info-design {
     display: block;
   }
 }
