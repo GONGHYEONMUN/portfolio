@@ -411,7 +411,7 @@ main {
         .java-sass-flexbox {
             @include responsive (pc-screens) {
                 img {
-                    padding: 50px;
+                    padding: 20px;
                 }
             }
         }
@@ -452,7 +452,8 @@ main {
         .sass:hover .sass-cd,
         .jquery:hover .jquery-cd,
         .git:hover .git-cd {
-            background-color: white;            
+            background-color: white;
+            border-radius: 50%;
         }
 
         .ps-cd,
@@ -503,7 +504,7 @@ main {
             transform: translate(-45%, -120%);
 
             @include responsive(pc-screens) {
-                transform: translate(-45%, -150%);
+                transform: translate(-45%, -130%);
                 font-size: 60px;
             }
 

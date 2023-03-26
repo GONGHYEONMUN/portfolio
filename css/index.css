@@ -431,7 +431,7 @@ main .skill .jquery-git-flexbox {
 @media screen and (min-width: 1400px) {
   main .skill .ps-ai-flexbox img,
   main .skill .java-sass-flexbox img {
-    padding: 50px;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -468,6 +468,7 @@ main .skill .sass:hover .sass-cd,
 main .skill .jquery:hover .jquery-cd,
 main .skill .git:hover .git-cd {
   background-color: white;
+  border-radius: 50%;
 }
 main .skill .ps-cd,
 main .skill .ai-cd,
@@ -528,7 +529,7 @@ main .skill .git > span {
   main .skill .sass > span,
   main .skill .jquery > span,
   main .skill .git > span {
-    transform: translate(-45%, -150%);
+    transform: translate(-45%, -130%);
     font-size: 60px;
   }
 }
